@@ -8,24 +8,24 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">QR Code Scanner</div>
+                    <div class="card-header"></div>
                     <div class="card-body">
                         <body>
                             <div class="container" id="QR-Code">
                                 <div class="panel panel-info">
                                     <div class="panel-heading">
                                         <div class="navbar-form navbar-left">
-                                            <h4>WebCodeCamJS.js Demonstration</h4>
+                                            <h4>Simply Scan & Review</h4>
                                         </div>
                                         <div class="navbar-form navbar-right">
                                             <select class="form-control" id="camera-select"></select>
                                             <div class="form-group">
-                                                <input id="image-url" type="text" class="form-control" placeholder="Image url">
-                                                <button title="Decode Image" class="btn btn-default btn-sm" id="decode-img" type="button" data-toggle="tooltip"><span class="glyphicon glyphicon-upload"></span></button>
-                                                <button title="Image shoot" class="btn btn-info btn-sm disabled" id="grab-img" type="button" data-toggle="tooltip"><span class="glyphicon glyphicon-picture"></span></button>
-                                                <button title="Play" class="btn btn-success btn-sm" id="play" type="button" data-toggle="tooltip">Start</button>
-                                                <button title="Pause" class="btn btn-warning btn-sm" id="pause" type="button" data-toggle="tooltip">Pause</button>
-                                                <button title="Stop streams" class="btn btn-danger btn-sm" id="stop" type="button" data-toggle="tooltip">Stop</button>
+                                                <input id="image-url" type="hidden" class="form-control" placeholder="Image url">
+                                                <!-- <button title="Decode Image" class="btn btn-default btn-sm" id="decode-img" type="button" data-toggle="tooltip"><span class="glyphicon glyphicon-upload"></span></button>  -->
+                                                <!-- <button title="Image shoot" class="btn btn-info btn-sm disabled" id="grab-img" type="button" data-toggle="tooltip"><span class="glyphicon glyphicon-picture"></span></button> -->
+                                                <!-- <button title="Play" class="btn btn-success btn-sm" id="play" type="button" data-toggle="tooltip">Click to Scan</button> -->
+                                                <!-- <button title="Pause" class="btn btn-warning btn-sm" id="pause" type="button" data-toggle="tooltip">Pause</button> -->
+                                                <!-- <button title="Stop streams" class="btn btn-danger btn-sm" id="stop" type="button" data-toggle="tooltip">Stop</button> -->
                                             </div>
                                         </div>
                                     </div>
@@ -38,6 +38,7 @@
                                                 <div class="scanner-laser laser-leftBottom" style="opacity: 0.5;"></div>
                                                 <div class="scanner-laser laser-leftTop" style="opacity: 0.5;"></div>
                                             </div>
+                                            <div><button title="Play" class="btn btn-success btn-sm" id="play" type="button" data-toggle="tooltip">Click to Scan</button></div>
                                             <div class="well" style="width: 100%;">
                                                 <label id="zoom-value" width="100">Zoom: 2</label>
                                                 <input id="zoom" onchange="Page.changeZoom();" type="range" min="10" max="30" value="30">
